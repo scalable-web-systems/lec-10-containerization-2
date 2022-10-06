@@ -27,3 +27,19 @@ cd client
 docker build -t 04-node-client .
 docker run --net=mynet --rm --name 04-client 04-node-client
 ```
+
+## Clean Up
+
+After you are done creating stuff, you can clean up with the following commands:
+
+(only do this if you do not want to keep anything around)
+
+```bash
+docker system prune -a
+```
+
+Note the flags to `system prune`:
+
+- `-a`: this flag also removes containers that are not being used.
+
+Now, we are back to a clean slate.
